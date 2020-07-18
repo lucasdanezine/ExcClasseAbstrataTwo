@@ -13,22 +13,23 @@ namespace ExcClasseAbstrataTwo.Entities
             DespesasMedicas = despesasMedicas;
         }
 
-        public override double Taxa(double renda)
+        public override double Taxa()
         {
+
             double imposto;
-           if(renda < 20000.00)
+           if(RendaAnual < 20000.00)
             {
-                imposto = renda * 0.15;
+                imposto = RendaAnual * 0.15;
                 
             }
-            else
+           else
             {
-                imposto = renda * 0.25;
+                imposto = RendaAnual * 0.25;
             }
 
-            if (DespesasMedicas != 0)
+           if (DespesasMedicas != 0)
             {
-                imposto -= DespesasMedicas;
+                imposto -= DespesasMedicas * 0.50;
             }
 
             return imposto;

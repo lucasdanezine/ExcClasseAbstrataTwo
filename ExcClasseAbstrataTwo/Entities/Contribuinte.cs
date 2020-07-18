@@ -15,7 +15,7 @@ namespace ExcClasseAbstrataTwo.Entities
             RendaAnual = rendaAnual;
         }
 
-        public abstract double Taxa(double renda);
+        public abstract double Taxa();
             
     }
 }
