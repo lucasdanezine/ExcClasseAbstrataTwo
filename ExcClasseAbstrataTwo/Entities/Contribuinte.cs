@@ -9,7 +9,7 @@ namespace ExcClasseAbstrataTwo.Entities
         public string Nome { get; set; }
         public double RendaAnual { get; set; }
 
-        public abstract double taxa(double renda);
+        public abstract double Taxa(double renda);
             
     }
 }
